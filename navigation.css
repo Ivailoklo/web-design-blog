@@ -1,0 +1,117 @@
+
+
+nav.main ul {
+	padding:0;
+	margin: 0;
+}
+
+nav.main ul li {
+	display: block;
+	list-style: none outside;
+	position: relative;
+}
+
+nav.main > ul > li {
+	padding: 0;
+}
+
+nav.main ul li a {
+	display: block;
+	padding: 1rem 1.5rem 1rem 0;
+	border-radius: 0.4rem;
+	text-decoration: none;
+    color: #112433;
+    border: solid transparent;
+	border-width: 2px 0;
+	text-transform: uppercase;
+}
+
+nav.main ul li a:hover,
+nav.main ul li:hover > a {
+    color: #7A3052;
+   
+}
+
+#main-nav-toggle,
+#toggle {
+	display: none;
+}
+
+#toggle {
+	position: relative;
+	flex: 0 0 auto;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	padding: 1rem 0;
+}
+
+#toggle .fas{
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+#toggle .fas.fa-times{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+	#toggle {
+		display: flex;
+		
+	}
+
+	nav.main {
+		display: none;
+        margin-top:1rem;
+	}
+
+	nav.main ul li{
+		border: 1px solid #112433;
+		background: #7A3052;
+		margin-bottom: 0.5rem; 
+	}
+    
+    nav.main ul li a{
+		text-align: center;
+		color: #E2E9ED;
+		margin: 0;
+		
+	}
+
+	nav.main ul li a:hover,
+	nav.main ul li:hover > a {
+    color: black;
+   
+	}
+
+	nav.main ul li:not(:first-child) {
+		padding-top: 0.5rem;
+	}
+
+	#main-nav-toggle:checked + section nav.main {
+		display: block;
+		flex: 1 0 100%;
+	}
+
+	#main-nav-toggle:checked + section #toggle .fa-times {
+		display: block;
+    }
+    
+    #main-nav-toggle:checked + section #toggle .fa-bars {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 800px) {
+
+	nav.main ul {
+		display: flex;
+	}
+
+	nav.main ul li:hover > ul {
+		display: block;
+	}
+}

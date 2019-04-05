@@ -1,0 +1,121 @@
+@import url("reset.css");
+@import url("typography.css");
+@import url("navigation.css");
+
+
+
+body {
+    background-color: #E2E9ED
+}
+
+
+
+.wrapper, .navigation, .footer {
+    display:flex;
+}
+
+
+.left-side{
+    min-width: 10rem;
+    position: relative;
+    align-items: baseline;
+    padding: 1rem;
+}
+
+.left-side .logo{
+    position: relative;
+    overflow: hidden;
+}
+
+.left-side .logo:after {
+	display: block;
+	content: '';
+	padding-top: 100%;
+}
+
+.left-side .logo img {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+.left-side .icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 3.5rem;
+    
+}
+
+.center-items{
+    align-items: center;
+    justify-items: center;
+}
+
+.site-title {
+    margin: 0; 
+    padding: 0;
+    line-height: 0.9;
+}
+
+.site-title a {
+    display: block;
+    text-decoration: none;
+    color: #112433;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.site-title p {
+    padding: 0;
+}
+
+.heading-two,
+.heading-four {
+    background: #7A3052;
+    color: #E2E9ED;
+}
+
+.heading-one,
+.heading-three{
+    color: #112433;
+}
+
+header h5 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.description .tag a {
+    text-decoration: none;
+    color: #80878C;
+    
+}
+
+footer {
+    background: #112433;
+    align-items: center;
+    justify-items: center;
+}
+
+footer p {
+    padding: 0.5rem 0;
+    color: #E2E9ED;
+}
+
+.navigation {
+    flex-wrap: wrap;
+}
+
+.navigation .main {
+    margin:0;
+}
+
+.footer .empty-box,
+.navigation .empty-box {
+    flex: 0 0 10rem;
+}
+
+
+
